@@ -1,0 +1,61 @@
+<%- include('./partials/nav') %>
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/singleProduct.css">
+    <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <title>Spell Bathing</title>
+</head>
+<body>
+    <div class="singleProduct">
+        <div class="product-img">
+          <div  id="small-img-div"></div>
+          <div id="big-img-div"> </div>
+        </div>
+        <div class="product-details"></div>
+    </div>
+
+    <div class="cart-overlay">
+        <div class="cart">
+          <span class="close-cart">
+            <i class="fa fa-times" aria-hidden="true"></i>
+          </span>
+          <h2>Cart</h2>
+          <div class="cart-content">
+            <!-- cart items -->
+            <!-- <div class="cart-items">
+            </div> -->
+            <!-- end of cart items -->
+          </div>
+          <div class="cart-footer">
+            <h3>Total: $ <span class="cart-total">0</span></h3>
+            <button class="clear-cart">Clear cart</button>
+          </div>
+        </div>
+      </div>
+
+    <script>
+        var str = window.location.pathname;
+        var strsplits = str.split("/");
+        var itemId = strsplits[3]
+    </script>  
+    <script
+    src="https://unpkg.com/contentful@7.0.5/dist/contentful.browser.min.js"
+    charset="utf-8"
+  ></script>
+  <script>
+    var exports = {}; // quick fix because 'exports' is not defined in rich-text bundle below
+  </script>
+        <script
+        src="https://unpkg.com/@contentful/rich-text-html-renderer@12.0.0/dist/rich-text-html-renderer.es5.js"
+        charset="utf-8"
+      ></script>
+    <script src="https://cdn.jsdelivr.net/npm/contentful@latest/dist/contentful.browser.min.js"></script>
+    <script src="/js/openproduct.js"></script>
+</body>
+</html>

@@ -1,0 +1,26 @@
+<head>
+    <title> Spell | <%= title %></title>
+    <%-  include ("partials/head") %>
+  </head>
+  <body>
+    <div class="container-center">
+      <img src="/img/spell-logo.png" alt="SPELL" style = " width: 200px;">
+      <h1>Lets Be Friends, <br> Register Yourself!!</h1>
+    <%- include ("./partials/messages") %>
+    <form action="/users/register" method = "POST" class="container-center">
+      <label for="fname">First Name</label>
+      <input type="text" id="fname" name="fname" required value="<%= typeof fname != 'undefined' ? fname : '' %>">
+      <label for="lname">Last Name</label>
+      <input type="text" id="lname" name="lname" required value="<%= typeof lname != 'undefined' ? lname : '' %>">
+      <label for="email">Email ID</label>
+      <input id="email" name="email" required value="<%= typeof email != 'undefined' ? email : '' %>">
+      <label for="pass">Enter a Password</label>
+      <input type="password", id = "pass", name="pass" required value="<%= typeof pass != 'undefined' ? pass : '' %>">
+      <label for="cpass">Confirm Password</label>
+      <input type="password", id = "cpass", name="cpass" required value="<%= typeof cpass != 'undefined' ? cpass: '' %>">
+      <button class="buttons">Submit</button>
+    </form>
+    <p style = "font-family:'montserrat' "> Already Registered? Login <a href="./login">here</a></p>
+    </div>
+    
+  </body>

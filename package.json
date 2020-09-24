@@ -1,0 +1,31 @@
+{
+  "name": "oneMoreTime",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "nodemon app.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@contentful/rich-text-html-renderer": "^14.1.1",
+    "bcryptjs": "^2.4.3",
+    "connect-flash": "^0.1.1",
+    "contentful": "^7.14.6",
+    "contentful-export": "^7.10.7",
+    "dotenv": "^8.2.0",
+    "ejs": "^3.1.3",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.1",
+    "express-sessions": "^1.0.6",
+    "flash": "^1.1.0",
+    "mongoose": "^5.9.21",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "stripe": "^8.81.0"
+  }
+}

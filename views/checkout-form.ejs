@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Checkout</title>
+    <script src="https://js.stripe.com/v3/" defer></script>
+    <script> stripePublicKey = '<%= stripePublicKey %>'</script>
+    <script src="/js/checkout-payment.js" defer></script>
+    
+    
+    <%-  include ("partials/head") %>
+</head>
+<body>
+    <div class="container-center">
+        <form action="/payments/create-checkot-session" method="POST" class="container-center">
+            <label for="mobile_number" id="mobile_number" >Enter your Mobile Number</label>
+            <input id="mobile_number" type="text" name="mobile_number">
+            <label for="email_id" id="email_id">Enter your Email ID</label>
+            <input id="email_id" type="text" name = "email_id">
+            <label for="line1" id="line1">line1</label>
+            <input id="line1" type="text" name="line1">
+            <label for="line2" id="line2">line2</label>
+            <input id="line2" type="text" name = "line2">
+            <label for="city" id="city">City</label>
+            <input id="city" type="text" name = "city">
+            <label for="state" id="state">State</label>
+            <input id="state" type="text" name = "state">
+            <label for="postal_code" id="postal_code">Postal code</label>
+            <input id="postal_code" type="text" name = "postal_code">
+            <button class="submit">submit</button>
+        </form>
+    </div>
+
+    <div class="order-summary" id = "order-summary" ></div>
+
+</body>
+</html>

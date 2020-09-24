@@ -1,0 +1,111 @@
+h1{
+    text-align: justify;
+    font-family: 'montserrat';
+}
+.container-center{
+    display:flex;
+    flex-direction: column;
+    align-items:center;
+    position: relative;
+}
+.buttons{
+    display:block;
+    text-decoration: none;
+    padding: 8px;
+    background-color: black;
+    color:white;
+    width:250px;
+    text-align: center;
+    margin:10px;
+    margin-top: 20px;
+    border-style: none;
+    cursor: pointer;
+    border-radius: 10px;
+    font-family: 'montserrat';
+    font-weight: bold;
+}
+label{
+    width: 100%;
+    font-family: 'montserrat';
+    margin-top:20px;
+    font-weight:bold;
+    font-size: 15px;
+    margin-bottom: 2px;
+}
+input{
+    width:300px;
+    margin-bottom: 10px;
+    border: 2px solid black;
+}
+input:focus{
+    border:4px solid rgb(216, 216, 27);
+}
+
+.banner{
+  position: relative;
+  box-sizing: border-box;
+  max-width: 100%;
+}
+.banner img{
+  max-width: 100%;
+  object-fit: cover;
+}
+
+.msg{
+    color:white;
+    background-color:rgba(173, 9, 9, 0.664);
+    padding:4px;
+    margin: 4px;
+    font-weight: bold;
+    font-family: 'montserrat';
+}
+
+.cat-container a {
+  text-decoration: none;
+  color:black;
+}
+
+.cat-container h2{
+  text-align: center;
+  margin-top: 30px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+.cat_grid{
+  box-sizing: border-box;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px,1fr));
+  align-items: center;
+  grid-gap: 0rem;
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: 60px;
+  max-width: 1170px;
+  align-content: center;
+  justify-items: center;
+}
+
+
+.cat_grid div{
+  padding: 5px;
+  padding-bottom:10px;
+  border: 1.5px solid black;
+  margin-bottom: 20px;
+}
+.cat_grid div:hover{
+  opacity: 0.8;
+}
+
+.cat_grid div img{
+  width: 10em;
+  padding-bottom: 5px;
+}
+.cat_grid div h3{
+  font-size: 1em;
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 2px;
+}
+@media (max-width: 600px) {
+
+} 

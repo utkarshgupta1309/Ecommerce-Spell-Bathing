@@ -1,0 +1,58 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.singleProduct{
+    display: grid;
+    padding:20px;
+    margin-top:50px;
+    grid-template-areas: 'image details';
+    grid-gap:20px;
+}
+#small-img-div {
+    grid-area:image;
+    float:left;
+}
+#small-img-div img{
+    height:92px;
+    width:70px;
+    display:block;
+    margin:10px;
+    opacity: 0.6; 
+    cursor:pointer;  
+}
+#small-img-div img:hover{
+    opacity: 1;
+}
+#big-img-div{
+    grid-area: details;
+    float: right;
+}
+#big-img-div img{
+    float: right;
+    height:500px;
+}
+.product{
+    padding:20px;
+    display:flex;
+    max-width: 1200px;
+}
+.product h3{
+text-align: left;
+font-size: 30px;
+}
+.product h4{
+    text-align: left;
+}
+.bags-btn{
+    display: flex;
+    align-self: start;
+    margin:20px;
+    margin-left:0px;
+}
+.description h4 {
+    color: black;
+}
+.img-container{
+    align-items:center;
+}
